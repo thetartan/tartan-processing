@@ -295,7 +295,7 @@ function processTokens(root, options, doNotLog) {
   var variants = [{
     node: root,
     hash: utils.node.calculateNodeHash(root),
-    weight: utils.node.calculateNodeWeight(root)
+    weight: options.calculateNodeWeight(root)
   }];
 
   var rootVariants = [];
